@@ -26,32 +26,33 @@
             </div>
 
             <h2 id="form-title">Apply as an Employee</h2>
-            <form id="registration-form">
-                <div class="form-group">
-                    <input type="text" placeholder="First Name *" required>
-                    <input type="text" placeholder="Your Email *" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" placeholder="Last Name *" required>
-                    <input type="tel" placeholder="Your Phone *" required>
-                </div>
-                <div class="form-group">
-                    <input type="password" placeholder="Password *" required>
-                    <select required>
-                        <option value="" disabled selected>Mendaftar Sebagai?</option>
-                        <option value="1">Admin</option>
-                        <option value="2">Peserta</option>
-                        <option value="3">Mentor</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <input type="password" placeholder="Confirm Password *" required>
-                </div>
-                <div class="gender-group">
-                    <label><input type="radio" name="gender" value="male" required> Male</label>
-                    <label><input type="radio" name="gender" value="female"> Female</label>
-                </div>
-                <button type="submit" class="register-btn">Register</button>
+            <form action="register.php" method="post">
+                <label for="first_name">First Name:</label>
+                <input type="text" name="first_name" id="first_name" required>
+            
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" id="last_name" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            
+                <label for="phone">Phone:</label>
+                <input type="text" name="phone" id="phone" required>
+            
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+            
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" name="confirm_password" id="confirm_password" required>
+            
+                <label for="role">Role:</label>
+                <select name="role" id="role" required>
+                    <option value="Admin">Admin</option>
+                    <option value="Mitra">Mitra</option>
+                    <option value="Peserta">Mitra</option>
+                </select>
+            
+                <button type="submit">Register</button>
             </form>
         </div>
     </div>
