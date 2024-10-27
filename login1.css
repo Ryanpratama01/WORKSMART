@@ -1,0 +1,127 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0e0e0;
+}
+
+/* Kontainer utama */
+.container {
+    width: 900px;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+/* Section selamat datang (kiri) */
+.welcome-section {
+    width: 40%; /* 40% untuk bagian kiri */
+    background-color: #1f3a57;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Panah kembali */
+.back-arrow {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    z-index: 10;
+}
+
+.back-arrow:hover {
+    color: gray;
+}
+
+.welcome-section h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.welcome-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Form login (kanan) */
+form {
+    width: 60%; /* 60% untuk bagian form */
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Jarak antar elemen form */
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 20px 0; /* Margin atas dan bawah */
+    text-align: center; 
+}
+
+/* Grup input nama (First dan Last Name) dalam satu baris */
+.form-group {
+    display: flex;
+    gap: 10px;
+    width: 100%; /* Pastikan input mengambil lebar penuh */
+}
+
+.form-group input {
+    width: calc(50% - 5px); /* Bagi dua kolom secara seimbang */
+}
+
+/* Input lainnya */
+form input, form select {
+    width: 100%; /* Input email dan password full width */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Tombol login */
+.register-btn {
+    width: 100%;
+    background-color: #2a6dfc;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #005bb5;
+}
+
+/* Title styles */
+#form-title {
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Adjust space above and below */
+}
